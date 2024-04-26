@@ -10,29 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6468979291:AAHr-kd7al5AfMfcltlYzvSimf_B7lMa7fg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5243536425:AAHWwOqlSLDC0kmToru1w4KcpC3fGODK25w")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "12258697"))
+APP_ID = int(os.environ.get("APP_ID", "19030904"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "f61d846f710798e68bb4e163a0600bae")
+API_HASH = os.environ.get("API_HASH", "1fe97b891a1912e874a9ab1c21aee9cd")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001820137700"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001718561628"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1242855376"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1471883657"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://AjayTrams:raviajay@cluster0.67dvwuh.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sanjutyson:sanjutysonn@tyson.dgo5rff.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "AjayTrams")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001820137700"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002146422176"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6322229420").split()):
+    for x in (os.environ.get("ADMINS", "0").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -49,13 +49,13 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You Need To Join In My Channel/Group To Use Me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "@Telugu_Movie_Room")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", "@Telugu_Movie_Room") == 'Flase'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌ Don't send me messages directly I'm only File Share bot!"
